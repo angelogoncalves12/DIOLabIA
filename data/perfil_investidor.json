@@ -1,23 +1,90 @@
 {
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "metas": [
+  "tema": "Perfis de Investidor",
+  "descricao": "Os perfis de investidor classificam pessoas de acordo com sua tolerância ao risco, objetivos financeiros e horizonte de investimento.",
+  "perfis": [
     {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
+      "nome": "Conservador",
+      "teoria": {
+        "descricao": "Prioriza a segurança do patrimônio e aceita menor rentabilidade para reduzir riscos.",
+        "tolerancia_risco": "Baixa",
+        "objetivo": "Preservação de capital",
+        "investimentos_comuns": [
+          "Tesouro Selic",
+          "CDBs de grandes bancos",
+          "Contas remuneradas",
+          "Fundos de renda fixa"
+        ]
+      },
+      "few_shot": [
+        {
+          "investidor": "Maria, 62 anos",
+          "situacao": "Aposentada e depende de sua reserva financeira.",
+          "perfil": "Conservador",
+          "justificativa": "Prefere estabilidade e não deseja correr riscos significativos."
+        },
+        {
+          "investidor": "João, 45 anos",
+          "situacao": "Está formando uma reserva de emergência.",
+          "perfil": "Conservador",
+          "justificativa": "Prioriza liquidez e segurança."
+        }
+      ]
     },
     {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
+      "nome": "Moderado",
+      "teoria": {
+        "descricao": "Busca equilíbrio entre segurança e rentabilidade, aceitando oscilações moderadas.",
+        "tolerancia_risco": "Média",
+        "objetivo": "Crescimento gradual do patrimônio",
+        "investimentos_comuns": [
+          "Fundos multimercado",
+          "ETFs",
+          "Tesouro IPCA+",
+          "Ações de empresas consolidadas"
+        ]
+      },
+      "few_shot": [
+        {
+          "investidor": "Carlos, 30 anos",
+          "situacao": "Investe para comprar um imóvel em 10 anos.",
+          "perfil": "Moderado",
+          "justificativa": "Aceita algum risco em troca de retornos maiores."
+        },
+        {
+          "investidor": "Ana, 35 anos",
+          "situacao": "Possui reserva de emergência e deseja aumentar patrimônio.",
+          "perfil": "Moderado",
+          "justificativa": "Diversifica entre renda fixa e variável."
+        }
+      ]
+    },
+    {
+      "nome": "Arrojado",
+      "teoria": {
+        "descricao": "Aceita grandes oscilações e riscos para buscar maior rentabilidade no longo prazo.",
+        "tolerancia_risco": "Alta",
+        "objetivo": "Maximização dos retornos",
+        "investimentos_comuns": [
+          "Ações de crescimento",
+          "Criptomoedas",
+          "Fundos de ações",
+          "Investimentos internacionais"
+        ]
+      },
+      "few_shot": [
+        {
+          "investidor": "Lucas, 25 anos",
+          "situacao": "Investe para aposentadoria daqui a 40 anos.",
+          "perfil": "Arrojado",
+          "justificativa": "Tolera perdas temporárias em busca de maiores ganhos."
+        },
+        {
+          "investidor": "Fernanda, 28 anos",
+          "situacao": "Possui renda estável e busca crescimento acelerado do patrimônio.",
+          "perfil": "Arrojado",
+          "justificativa": "Está confortável com a volatilidade do mercado."
+        }
+      ]
     }
   ]
 }

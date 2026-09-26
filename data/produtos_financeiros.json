@@ -3,40 +3,223 @@
     "nome": "Tesouro Selic",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "100% da Selic",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "excelente",
+      "juros_baixos": "boa",
+      "inflacao_alta": "regular",
+      "crise_economica": "excelente"
+    },
+    "perfil_indicado": [
+      "conservador",
+      "moderado"
+    ],
     "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
+    "objetivo": "reserva de emergencia",
+    "descricao": "Título público pós-fixado atrelado à taxa Selic."
   },
   {
     "nome": "CDB Liquidez Diária",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "102% do CDI",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "excelente",
+      "juros_baixos": "regular",
+      "inflacao_alta": "regular",
+      "crise_economica": "boa"
+    },
+    "perfil_indicado": [
+      "conservador",
+      "moderado"
+    ],
     "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
+    "objetivo": "reserva e caixa",
+    "descricao": "Protegido pelo FGC dentro dos limites vigentes."
   },
   {
     "nome": "LCI/LCA",
     "categoria": "renda_fixa",
     "risco": "baixo",
-    "rentabilidade": "95% do CDI",
+    "liquidez": "baixa",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "boa",
+      "inflacao_alta": "regular",
+      "crise_economica": "boa"
+    },
+    "perfil_indicado": [
+      "conservador",
+      "moderado"
+    ],
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "objetivo": "preservacao patrimonial",
+    "descricao": "Título bancário geralmente isento de IR para pessoa física."
+  },
+  {
+    "nome": "Tesouro IPCA+",
+    "categoria": "renda_fixa",
+    "risco": "medio",
+    "liquidez": "media",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "excelente",
+      "crise_economica": "regular"
+    },
+    "perfil_indicado": [
+      "moderado"
+    ],
+    "aporte_minimo": 30.00,
+    "objetivo": "aposentadoria e longo prazo",
+    "descricao": "Proteção contra inflação com rendimento real."
+  },
+  {
+    "nome": "Debêntures Incentivadas",
+    "categoria": "renda_fixa_privada",
+    "risco": "medio",
+    "liquidez": "media",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "boa",
+      "crise_economica": "regular"
+    },
+    "perfil_indicado": [
+      "moderado",
+      "arrojado"
+    ],
+    "aporte_minimo": 1000.00,
+    "objetivo": "geracao de renda",
+    "descricao": "Títulos corporativos com potencial de retorno superior."
   },
   {
     "nome": "Fundo Multimercado",
     "categoria": "fundo",
     "risco": "medio",
-    "rentabilidade": "CDI + 2%",
+    "liquidez": "media",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "boa",
+      "inflacao_alta": "boa",
+      "crise_economica": "regular"
+    },
+    "perfil_indicado": [
+      "moderado"
+    ],
     "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
+    "objetivo": "diversificacao",
+    "descricao": "Pode investir em juros, câmbio, ações e renda fixa."
   },
   {
-    "nome": "Fundo de Ações",
-    "categoria": "fundo",
+    "nome": "Fundos Imobiliários (FIIs)",
+    "categoria": "renda_variavel",
+    "risco": "medio",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "regular",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "boa",
+      "crise_economica": "regular"
+    },
+    "perfil_indicado": [
+      "moderado",
+      "arrojado"
+    ],
+    "aporte_minimo": 10.00,
+    "objetivo": "renda passiva",
+    "descricao": "Exposição ao mercado imobiliário através da bolsa."
+  },
+  {
+    "nome": "ETF BOVA11",
+    "categoria": "etf",
     "risco": "alto",
-    "rentabilidade": "Variável",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "regular",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "regular",
+      "crise_economica": "fraca"
+    },
+    "perfil_indicado": [
+      "arrojado"
+    ],
+    "aporte_minimo": 15.00,
+    "objetivo": "crescimento patrimonial",
+    "descricao": "Replica o índice Ibovespa."
+  },
+  {
+    "nome": "ETF IVVB11",
+    "categoria": "etf_internacional",
+    "risco": "alto",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "boa",
+      "inflacao_alta": "boa",
+      "crise_economica": "boa"
+    },
+    "perfil_indicado": [
+      "moderado",
+      "arrojado"
+    ],
+    "aporte_minimo": 20.00,
+    "objetivo": "diversificacao internacional",
+    "descricao": "Exposição indireta ao S&P 500."
+  },
+  {
+    "nome": "Ações de Dividendos",
+    "categoria": "acoes",
+    "risco": "alto",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "regular",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "boa",
+      "crise_economica": "regular"
+    },
+    "perfil_indicado": [
+      "arrojado"
+    ],
+    "aporte_minimo": 30.00,
+    "objetivo": "geracao de renda e crescimento",
+    "descricao": "Empresas maduras com histórico de distribuição de lucros."
+  },
+  {
+    "nome": "Ações de Crescimento",
+    "categoria": "acoes",
+    "risco": "muito_alto",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "fraca",
+      "juros_baixos": "excelente",
+      "inflacao_alta": "regular",
+      "crise_economica": "fraca"
+    },
+    "perfil_indicado": [
+      "arrojado"
+    ],
+    "aporte_minimo": 30.00,
+    "objetivo": "valorizacao de longo prazo",
+    "descricao": "Empresas focadas em expansão e reinvestimento."
+  },
+  {
+    "nome": "BDRs",
+    "categoria": "internacional",
+    "risco": "alto",
+    "liquidez": "alta",
+    "adaptabilidade_mercado": {
+      "juros_altos": "boa",
+      "juros_baixos": "boa",
+      "inflacao_alta": "boa",
+      "crise_economica": "boa"
+    },
+    "perfil_indicado": [
+      "moderado",
+      "arrojado"
+    ],
+    "aporte_minimo": 20.00,
+    "objetivo": "investimento global",
+    "descricao": "Recibos negociados na B3 que representam ações estrangeiras."
   }
 ]
