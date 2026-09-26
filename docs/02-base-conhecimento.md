@@ -2,14 +2,13 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
+| `historico_atendimento.csv` | CSV | Interações Anteriores para Aprender sobre Comportamento e Padrões |
+| `investidorprofile.json` | JSON | Utilizar como "Few Shot" para estudar o Comportamento de um Perfil de Investidor|
+| `produtos_financeiros.json` | JSON | Investimentos de Renda Simples Disponível no Mercado |
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+| `perfil_investidor.json´ | JSON | Explicar cada tipo de perfil de investidor com um FewShot para cada um |
 
 > [!TIP]
 > **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
