@@ -50,7 +50,7 @@ na seriedade das informações fornecidas / solicitadas.
 
 ```mermaid
 flowchart TD
-        A[Usuário] -->|Requisição| B[Interface "(chat)"]
+        A[Usuário] -->|Requisição| B["Interface (chat)"]
     B --> C[LLM]
     C --> D[Base de Conhecimento]
     D --> C
@@ -64,8 +64,8 @@ flowchart TD
 |------------|-----------|
 | Interface | Vercel? |
 | LLM | openai/gpt-oss-20b |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| Base de Conhecimento | ARQUIVOS JSON/CSV embutidos na pasta "data"|
+| Validação | Dupla checagem na veracidade dos dados|
 
 ---
 
@@ -73,12 +73,15 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [ ] O Agente deverá apenas recomendar soluções e ideias viáveis legalmente, e não deverá tomar escolhas que são de responsabilidade do usuário
+- [ ] Todas as recomendações e conselhos devem ser baseado em dados e análises de perfil do usuário
+- [ ] Prioridade na confidencialidade e não processamento de dados sensíveis
+- [ ] NUNCA inventar dados, fraudar informações ou responder o que não sabe. Sempre priorizar a veracidade e integridade dos dados.
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÃO toma decisões pelo usuário, sempre priorizando opções e planejamentos diferentes
+- NÃO solicita informações confidenciais ou sensíveis, e caso seja dito, não as utiliza ou as repete.
+- NÃO deduz o perfil do usuário, sempre buscando ser analítico antes de qualquer decisão
+- NÃO substitui um profissional da área
