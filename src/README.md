@@ -2,13 +2,12 @@
 
 Esta pasta contém o código do seu agente financeiro.
 
-## Estrutura Sugerida
+## Estrutura Utilizada
 
 ```
 src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
+├── app.py              # Aplicação principal (customtkinter)
+├── .env                # Configurações (API keys, etc.)
 └── requirements.txt    # Dependências
 ```
 
