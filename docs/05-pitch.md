@@ -7,13 +7,14 @@
 
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
-
-[Sua descrição aqui]
+Muitas pessoas enfrentam dificuldades para administração financeira, especialmente quando trata-se de duas vertentes: divida e investimento.
+O brasileiro médio infelizmente não recebe muita instrução de como otimizar dividas, ganhos, gastos... 
 
 ### 2. A Solução (1 min)
 > Como seu agente resolve esse problema?
 
-[Sua descrição aqui]
+Então, pensei em uma solução prática: um agente simples que responde dúvidas sobre esses temas, mas que especialmente, realiza recomendações
+de estratégias de otimização das dívidas, de quais investimentos adequados para cada perfil, e principalmente, descobrir o seu perfil como investidor.
 
 ### 3. Demonstração (1 min)
 > Mostre o agente funcionando (pode ser gravação de tela)
