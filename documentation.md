@@ -43,9 +43,7 @@ Siga os passos abaixo para configurar o ambiente e executar o Thomas na sua máq
 Passo 1: Clonar o Repositório
 Bash
 
-git clone [https://github.com/seu-usuario/thomas-ia.git](https://github.com/seu-usuario/thomas-ia.git)
-cd thomas-ia
-
+git clone [https://github.com/seu-usuario/thomas-ia.git](https://github.com/angelogoncalves12/DIOLabIA cd 
 Passo 2: Criar e Ativar um Ambiente Virtual (Opcional, mas recomendado)
 
     No Linux / macOS:
