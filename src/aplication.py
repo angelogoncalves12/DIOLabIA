@@ -8,9 +8,9 @@ import customtkinter as ctk
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# -----------------------------------------------------------------------------
-# CONFIGURAÇÃO DE AMBIENTE E INTERFACE
-# -----------------------------------------------------------------------------
+
+# CONFIGURAÇÃO DE INTERFACE
+
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
@@ -30,9 +30,9 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 
-# -----------------------------------------------------------------------------
+
 # TRATAMENTO E CARREGAMENTO DE DADOS
-# -----------------------------------------------------------------------------
+
 def carregar_json(nome_arquivo):
     caminho = DATA_DIR / nome_arquivo
     if not caminho.exists():
@@ -85,9 +85,8 @@ def montar_contexto():
     
     return "\n".join(contexto)
 
-# -----------------------------------------------------------------------------
-# SANITIZAÇÃO DE RESPOSTAS (REMOÇÃO DE MARKDOWN)
-# -----------------------------------------------------------------------------
+# REMOÇÃO DE MARKDOWN
+
 def limpar_resposta(texto):
     if not texto:
         return ""
@@ -117,9 +116,8 @@ def limpar_resposta(texto):
     texto = re.sub(r'\n{3,}', '\n\n', texto)
     return texto.strip()
 
-# -----------------------------------------------------------------------------
-# PROMPT DO SISTEMA E INTEGRAÇÃO GROQ
-# -----------------------------------------------------------------------------
+# PROMPT E INTEGRAÇÃO 
+
 def gerar_prompt():
     contexto_base = montar_contexto()
     prompt_sistema = f"""Você é o Thomas, um agente financeiro especializado em investimentos e dívidas.
@@ -171,9 +169,9 @@ def consultar_ia(pergunta, historico):
     conteudo_bruto = resposta.choices[0].message.content
     return limpar_resposta(conteudo_bruto)
 
-# -----------------------------------------------------------------------------
-# INTERFACE GRÁFICA (CUSTOMTKINTER COM CONTROLE DE ZOOM)
-# -----------------------------------------------------------------------------
+
+# INTERFACE GRÁFICA - CUSTOMTKINTER E AGR CONTROLE DE ZOOM
+
 class AplicativoFinanceiro(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -263,7 +261,7 @@ class AplicativoFinanceiro(ctk.CTk):
             self.tamanho_fonte -= 2
             self.txt_chat.configure(font=ctk.CTkFont(size=self.tamanho_fonte))
 
-    def _mensagem_boas_vindas(self):
+    def _mensagem_boas_vindas(self): #ṔRIMEIRA MSG PADRÃO
         msg = "Opaaa! Eu sou o Thomas. Como posso te ajudar hoje com seus investimentos ou dívidas?"
         self.adicionar_mensagem("Thomas", msg)
 
@@ -323,9 +321,7 @@ class AplicativoFinanceiro(ctk.CTk):
             texto = df_transacoes.to_string(index=False)
         self.adicionar_mensagem("Sistema (Transações Registradas)", texto)
 
-# -----------------------------------------------------------------------------
 # EXECUÇÃO DO APLICATIVO
-# -----------------------------------------------------------------------------
 if __name__ == "__main__":
     app = AplicativoFinanceiro()
     app.mainloop()
