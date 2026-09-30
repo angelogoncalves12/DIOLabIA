@@ -43,7 +43,8 @@ Siga os passos abaixo para configurar o ambiente e executar o Thomas na sua máq
 Passo 1: Clonar o Repositório
 Bash
 
-git clone [https://github.com/seu-usuario/thomas-ia.git](https://github.com/angelogoncalves12/DIOLabIA cd 
+git clone [https://github.com/seu-usuario/thomas-ia.git](https://github.com/angelogoncalves12/DIOLabIA cd src
+
 Passo 2: Criar e Ativar um Ambiente Virtual (Opcional, mas recomendado)
 
     No Linux / macOS:
@@ -65,7 +66,7 @@ pip install -r requirements.txt
 
 3. Configuração do Arquivo .env
 
-Na raiz do projeto, crie um arquivo chamado .env (ou edite o existente) e adicione a sua chave da Groq:
+Na raiz do projeto, crie um arquivo chamado .env e adicione a sua chave da Groq:
 Snippet de código
 
 GROQ_API_KEY=sua_chave_groq_aqui
