@@ -67,10 +67,11 @@ pip install -r requirements.txt
 3. Configuração do Arquivo .env
 
 Na raiz do projeto, crie um arquivo chamado .env e adicione a sua chave da Groq:
-Snippet de código
 
+```
 GROQ_API_KEY=sua_chave_groq_aqui
 GROQ_MODEL=openai/gpt-oss-120b
+```
 
     ⚠️ Atenção: O programa não iniciará caso a variável GROQ_API_KEY não esteja presente no .env.
 
